@@ -25,14 +25,20 @@ $ git add .
 $ git commit -m "Docker"
 ```
 
-Spin up your development environment with Docker (add the `-d` flag to the command to run in detached mode)
+Spin up your development environment with Docker (add the `-d` flag to the command to run in detached mode). Your PHP files will be served from the `public/` directory.
 ``` 
 $ docker-compose up
 ```
 
 That's all! You're now running your PHP application with Docker!
 
-You'll be able to access your application at http://<docker-ip>, where <docker-ip> is the boot2docker ip or localhost if you are running Docker natively.
+## Craft `--with`
+You can even swap out the default services the Craft Kit uses by using the `--with` parameter. 
+```
+$ mason craft php --with="php, postgres"
+```
+- Default: php, mysql
+- Available: php, mysql, mariadb, mongodb, postgres, postgis
 
 ## Deployment
 Deploying is just as easy with [Codemason](http://codemason.io). For more detailed instructions, see our [documentation](http://codemason.io/docs/quickstart#deploy-dreams).
