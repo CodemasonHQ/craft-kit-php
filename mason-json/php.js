@@ -1,13 +1,13 @@
 module.exports = {
-    name: 'web', 
-    build: '.',
-    base: 'codemasonhq/php', 
-    type: 'service',
-    volumes: {
-        './':'/app',
-    },
-    ports: [
-        "80:80",
-        "443:443"
-    ],
+  name: 'web', 
+  build: '.',
+  base: 'codemasonhq/php', 
+  type: 'service',
+  volumes: {
+    './':'/app',
+  },
+  ports: [
+    "80:80",
+    "443:443"
+  ],
 }
