@@ -1,5 +1,5 @@
 # Craft Kit - PHP
-This is the official [craft kit](http://codemason.io/docs/craft-kits) for PHP by [Codemason](http://codemason.io). 
+This is the official [craft kit](https://codemason.io/docs/craft-kits) for PHP by [Codemason](https://codemason.io). 
 
 ```
 $ mason craft php
@@ -7,11 +7,11 @@ $ mason craft php
 
 Craft kits let you Dockerize your application with one command. They are an excellent way to ease into building Docker powered apps without having to learn the ins and outs of Docker.
 
-Then with [Codemason](http://codemason.io), you can deploy your app to a server in a matter of minutes!
+Then with [Codemason](https://codemason.io), you can deploy your app to a server in a matter of minutes!
 
 ## Requirements 
 > This guide assumes you have:
-> - Installed the [Mason CLI](http://codemason.io/docs/installation)
+> - Installed the [Mason CLI](https://codemason.io/docs/installation)
 
 ## Quickstart
 Craft your PHP app with Docker 
@@ -45,7 +45,7 @@ Deploying is just as easy with [Codemason](http://codemason.io). For more detail
 
 Create an application on Codemason for your app
 ```
-$ mason create --application php-app
+$ mason create php-app
 ```
 
 Push your code to your Codemason Git remote to build it into a Docker image
@@ -55,5 +55,5 @@ $ git push codemason master
 
 Deploy
 ```
-$ mason deploy --to php-app
+$ mason deploy php-app
 ```
